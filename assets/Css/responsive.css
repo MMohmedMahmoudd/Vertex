@@ -229,6 +229,22 @@
   .navbar {
     display: none;
   }
+  .navbar.active {
+    display: block;
+    
+  }
+  .navbar.active .navbar-links{
+    flex-direction: column;
+    width: 36rem;
+    right: -250px;
+    justify-content: center;
+    align-items: center;
+    top: 50px;
+
+  }
+  .navbar.active .navbar-links li{
+  padding-right: 0;
+  }
   .review ul li {
     padding-right: 0px;
   }
@@ -387,9 +403,9 @@
     padding-bottom: 16px;
     padding-left: 30px;
   }
-  header {
+  /* header {
     padding-top: 10px;
-  }
+  } */
   h3 {
     font-size: 22px;
   }
@@ -434,6 +450,12 @@
   }
   .review img {
     margin-left: 0;
+  }
+  .navbar.active .navbar-links{
+    top: 30px;
+    width: 34rem;
+    right: -250px;
+
   }
 }
 @media(max-width: 768px){
@@ -487,11 +509,26 @@
     padding-bottom: 0;
     margin-bottom: 0px;
   }
+  .navbar.active .navbar-links{
+    top: 35px;
+    width: 37rem;
+    right: -280px;
+
+  }
+
 }
 @media(max-width: 576px){
+  .navbar.active .navbar-links{
+    top: 35px;
+    width: 37rem;
+    right: -280px;
+  
+  }
+
   ul.shaps-img {
     display: none;
   }
+
   .footer-try {
     padding-bottom: 60px;
   }
@@ -571,6 +608,13 @@
   .hs-responsive-embed-youtube iframe {
      height: 320px;
   }
+  .navbar.active .navbar-links{
+    top: 35px;
+    width: 32rem;
+    right: -230px;
+  
+  }
+
 }
 @media(max-width: 480px){
   .presenting {
@@ -579,7 +623,7 @@
     gap: 30px;
   }
   .top-bar a i {
-    font-size: 18px;
+    font-size: 20px;
     padding-top: 6px;
     margin-right: 5px;
 }
@@ -601,6 +645,14 @@
     font-size: 12px;
     line-height: 22px;
   } 
+  .navbar.active .navbar-links{
+    top: 35px;
+    width: 30rem;
+    right: -230px;
+  
+  }
+  
+
 }
 @media(max-width: 450px){
   .hero-text h2 {
@@ -631,6 +683,14 @@
     width: 120px;
     margin-right: 0px;
   }
+  .navbar.active .navbar-links{
+    top: 20px;
+    width: 28rem;
+    right: -180px;
+  
+  }
+  
+
 }
 @media(max-width: 410px){
   .marquee:before, .marquee:after {
@@ -642,5 +702,33 @@
   .footer-try h2 {
     font-size: 30px;
   }
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 20%;
+    left: 0px;
 }
-@media(max-width: 375px){ }
+.navbar.active .navbar-links{
+  top: 20px;
+  width: 25rem;
+  right: -155px;
+
+}
+
+
+}
+@media(max-width: 375px){
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 15%;
+    left: 0px;
+}
+.navbar.active .navbar-links{
+  top: 20px;
+  width: 22rem;
+  right: -120px;
+
+}
+
+}
