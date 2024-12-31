@@ -281,7 +281,18 @@
     left: 50%;
   }
 }
+@media(max-width: 1200px){
+  .navbar.active .navbar-links{
+    flex-direction: row;
+}}
 @media(max-width: 993px){
+  .navbar.active .navbar-links{
+    top: 35px;
+    width: 70rem;
+    right: -470px;
+    flex-direction: column;
+}
+
   .hero-section {
      padding-top: 105px;
   }
@@ -451,12 +462,6 @@
   .review img {
     margin-left: 0;
   }
-  .navbar.active .navbar-links{
-    top: 30px;
-    width: 34rem;
-    right: -250px;
-
-  }
 }
 @media(max-width: 768px){
   .marquee:before,.marquee:after {
@@ -511,11 +516,9 @@
   }
   .navbar.active .navbar-links{
     top: 35px;
-    width: 37rem;
-    right: -280px;
-
-  }
-
+    width: 48rem;
+    right: -360px;
+}
 }
 @media(max-width: 576px){
   .navbar.active .navbar-links{
